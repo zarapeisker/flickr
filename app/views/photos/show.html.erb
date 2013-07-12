@@ -1,0 +1,7 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= @photo.title %></h1>
+<p><%= image_tag @photo.url %></p>
+
+<%= link_to 'Edit', edit_album_photo_path(@album, @photo) %> |
+<%= link_to 'Back', album_photos_path(@album) %>
